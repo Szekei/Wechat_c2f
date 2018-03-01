@@ -1,0 +1,6 @@
+node_modules/
+public/dist/
+public/javascripts/
+public/stylesheets/
+.idea/
+npm-debug.log

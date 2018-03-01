@@ -1,0 +1,47 @@
+@import "variable";
+.bg_white{
+  background-color: @bg_color;
+}
+.btn-unselected{
+  background: white;
+  color: @darker_grey;
+  border-color: @darker_grey;
+  outline: none;
+}
+.btn-selected{
+  background: @theme_col;
+  color: white;
+  outline: none;
+  border-color: @theme_col;
+}
+.btn-submit{
+  margin: 4% 4%;
+  font-size: 20px;
+  text-align: center;
+  padding:10px 0;
+  color: white;
+  border-radius: 4px;
+}
+.btn-disabled{
+  background-color: @light_grey;
+  color: @darker_grey;
+  border-color: @darker_grey;
+}
+.add_right{
+  width: 0;
+  height: 0;
+  border-width: 25px 25px 25px 25px;
+  border-style: solid;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+}
+.add_left{
+  width: 0;
+  height: 0;
+  border-width: 25px 25px 25px 25px;
+  border-style: solid;
+  position: absolute;
+  top: 0px;
+  right: 100px;
+}

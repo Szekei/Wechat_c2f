@@ -1,0 +1,46 @@
+doctype html
+html
+   head
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(charset='utf-8')
+      link(rel='stylesheet', href='/stylesheets/sharing/sharing.css')
+      link(rel='stylesheet', href='/lib/styles/style.css')
+      title= 'WeChat Share'
+      block head
+   body
+      .top
+         .top-center
+            .time
+               | Sep 12, 2015 11:44 AM
+      .leftd
+         img(src="#{headImgUrl}").left_img
+         .speech.left
+            span=__('greeting')
+      .leftd
+         img(src="#{headImgUrl}").left_img
+         .speech.left
+            img(width="200" height="100" src="#{imgSrc}")
+
+      .leftd
+         img(src="#{headImgUrl}").left_img
+         .speech.left
+            span=__('show_off')
+            span #{intro1}
+
+      .leftd
+         img(src="#{headImgUrl}").left_img
+         .speech.left
+            span=__('introduction2')
+      .leftd
+         img(src="#{headImgUrl}").left_img
+         .speech.left
+            span=__('introduction3')
+
+      .bottom
+         .bottom-center
+            .dialog
+               a(href="/order/order?type=#{typeIndex}&color=#{colorIndex}")=__('order_please')
+
+      script(src='/lib/zepto/zepto.js')
+      script(src="/javascripts/sharing/sharing.js")
+

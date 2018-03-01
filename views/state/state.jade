@@ -1,0 +1,52 @@
+doctype html
+html
+    head
+        meta(name='viewport' content='width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no')
+        meta(charset='utf-8')
+        title= 'Check Status'
+        link(rel='stylesheet', href='/stylesheets/state/state.css')
+        link(rel='stylesheet', href='/lib/styles/style.css')
+        script(src='/lib/zepto/zepto.js')
+body
+    script(src='/javascripts/state/state.js')
+    .bar
+        .description
+            img#carimg(src="/lib/car/audi_white.jpg")
+            #ctitle.car_title=__('audi_car') + ' [' +__('white') + ']'
+            #num.order_number=14332456
+    .line-left
+        #line-left.line-left-completed
+    .line-right
+        #line-right.line-right-completed
+    .car
+      img(src="/images/car.png")
+    #status1(class=['tag','tag_left','ready'])
+        .text= __('state1')
+    #status2(class=['tag','tag_right','ready'])
+        .text= __('state2')
+    #status3(class=['tag','tag_left','ready'])
+        .text= __('state3')
+    .slides-container
+        .slides
+            - for(var i = 1;i < 11;i++) {
+                .slide
+                    .details= __('operation' + i)
+            - }
+    .slide-bottom
+    .bottom-line-left
+    .bottom-line-right
+    #status5(class=['tag','tag_right','ready'])
+        .text= __('state4')
+    .complete
+        p= __('end1')
+        p= __('end2')
+    script(type='text/javascript').
+        var signature = '#{signature}';
+        var nonceStr = '#{nonceStr}';
+        var timestamp = '#{timestamp}';
+        var appId = '#{appId}';
+        var headImgUrl = '#{headImgUrl}';
+    script(src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js')
+    script(src="/javascripts/sharing/sharing.js")
+
+

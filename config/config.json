@@ -1,0 +1,50 @@
+{
+  "development": {
+    "mongodb":{
+        "USE_DB" : "true",
+        "ip" : "localhost",
+        "dbname" : "innovation"
+    },
+    "username": "",
+    "password": "",
+    "database": "innovation",
+    "host": "127.0.0.1",
+    "wechat": {
+        "appID": "wxd02a571349eedbf6",
+        "appsecret": "09cf12b57c6c3b08e35772cf74cabc1a",
+        "token": "wechat_token"
+    }
+  },
+  "test": {
+    "mongodb":{
+        "USE_DB" : "false",
+        "ip" : "localhost",
+        "dbname" : "innovation"
+    },
+    "username": "",
+    "password": "",
+    "database": "innovation",
+    "host": "127.0.0.1",
+    "wechat": {
+        "appID": "wxd02a571349eedbf6",
+        "appsecret": "09cf12b57c6c3b08e35772cf74cabc1a",
+        "token": "wechat_token"
+    }
+  },
+  "production": {
+    "mongodb":{
+        "USE_DB" : "false",
+        "ip" : "localhost",
+        "dbname" : "innovation"
+    },
+    "username": "",
+    "password": "",
+    "database": "innovation",
+    "host": "127.0.0.1",
+    "wechat": {
+        "appID": "wxd02a571349eedbf6",
+        "appsecret": "09cf12b57c6c3b08e35772cf74cabc1a",
+        "token": "wechat_token"
+    }
+  }
+}

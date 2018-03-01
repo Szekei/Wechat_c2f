@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(charset='utf-8')
+		link(rel='stylesheet', href='/stylesheets/analyse/display.css')
+		link(rel='stylesheet', href='/lib/styles/style.css')
+		title= 'Analyse'
+		script(src='/lib/zepto/zepto.js')
+		script(src='/lib/chart/Chart.js')
+		block head
+	body
+		script(src = '#{display_js_src}')
+		script(src='/javascripts/analyse/display.js')
+		ul.class-bar
+			each item,index in [__('overview'), __('male'), __('female')]
+				li(id='tag#{index}', class='tag-unselected') #{item}
+		.container
+			canvas#chart-area.canvas
+			ul.legend
+				each element,num in [__('audi'), __('bmw'), __('porsche'), __('ford'), __('chevrolet')]
+					.group
+						.color(id='color#{num}',class='color')
+						li(id='legend#{num}',class='type') #{element}
+		.container
+			canvas#chart-field.canvas
+			ul.legend
+				each elements,nums in [__('white'), __('orange'), __('yellow'), __('black'), __('red'),__('golden'),__('silver')]
+					.group
+						.color(id='colors#{nums}',class='color')
+						li(id='legends#{nums}',class='type') #{elements}

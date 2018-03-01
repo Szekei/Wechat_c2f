@@ -1,0 +1,62 @@
+{
+	"state1": "Order Submitted",
+	"state2": "ERP created an order",
+	"state3": "Order Comes to MES",
+	"state4": "Order Accomplished",
+
+  	"end1": "Production completed.",
+  	"end2": "Would you like to name it?",
+	"operation1": "Initialize RFID",
+	"operation2": "Supplying Chassis",
+	"operation3": "Supplying Mainbody",
+	"operation4": "Supplying windshield",
+	"operation5": "Scanning",
+	"operation6": "Polishing windshield",
+	"operation7": "Assembling windshield",
+	"operation8": "Quality Control",
+	"operation9": "Manual rework",
+	"operation10": "Robot picking",
+
+  	"type": "Type",
+	"audi": "Audi",
+	"bmw" : "BMW",
+	"porsche" : "Porsche",
+	"ford" : "Ford",
+	"chevrolet":"Chevrolet",
+
+  	"audi_car": "Audi R8",
+	"bmw_car" : "BMW 335i",
+	"porsche_car" : "Porsche Panamera",
+	"ford_car" : "Ford Mustang",
+	"chevrolet_car":"Chevrolet Camaro",
+
+  	"color": "Color",
+	"red":"Red",
+	"yellow":"Yellow",
+	"orange":"Orange",
+	"black":"Black",
+	"white":"White",
+	"golden":"Golden",
+	"silver":"Silver",
+
+  	"other": "Other",
+  	"normal": "Normal",
+  	"urgent": "Urgent",
+
+  	"submit": "Submit",
+  	"welcome": "Now to Industry 4.0",
+
+  	"greeting": "Hi!",
+  	"show_off": "Look at my NEW car! It's ",
+  	"introduction2": "It's born with Industry 4.0!",
+  	"introduction3": "Isn't this cool?",
+  	"order_please": "I want one for myself.",
+
+  	"order_js_src": "/javascripts/order/order_en.js",
+	"overview": "Overview",
+	"male": "Male",
+	"female": "Female",
+
+  	"order_js_src": "/javascripts/order/order_en.js",
+  	"display_js_src": "/javascripts/analyse/display_en.js"
+}

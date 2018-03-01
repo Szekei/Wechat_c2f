@@ -1,0 +1,30 @@
+{
+  "button":[
+
+    {
+      "name":"订单",
+      "sub_button":[
+        {
+          "type":"view",
+          "name":"下单",
+          "url" :"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4006f6ce87392229&redirect_uri=http%3a%2f%2f115.29.136.24:3000%2forder%2forder&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect"
+        },
+        {
+          "type":"view",
+          "name":"查询订单状态",
+          "url":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4006f6ce87392229&redirect_uri=http%3a%2f%2f115.29.136.24:3000%2forder%2fstate&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect"
+        }]
+    },
+    {
+      "type":"view",
+      "name":"统计",
+      "key":"V1001_TODAY_MUSIC",
+      "url" :"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx4006f6ce87392229&redirect_uri=http%3a%2f%2f115.29.136.24:3000%2fanalyse%2fdisplay&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect"
+    },
+    {
+      "type":"click",
+      "name":"关于",
+      "key":"V002"
+    }
+  ]
+}

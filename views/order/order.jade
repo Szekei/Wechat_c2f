@@ -1,0 +1,48 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='/stylesheets/order/order.css')
+        link(rel='stylesheet', href='/lib/styles/style.css')
+        title= 'Create Order'
+        script(src='/lib/zepto/zepto.js')
+        block head
+    body
+        script(src = '#{order_js_src}')
+        script(src='/javascripts/order/order.js')
+        #loading
+            .cover
+            .spinner
+                each member in [1,2,3]
+                    div(class='spinner-container container#{member}')
+                        each number in [1,2,3,4]
+                            div(class='circle#{number}')
+        .image-panel
+            img#car-img(src='/lib/car/audi_white.jpg')
+            #car-name.car-name
+                span#carName= __('audi_car') + ' [' +__('white') + ']'
+                span#price
+        .panel
+            .car-type
+                .type-title= __('type')
+                .type-list
+                    each item,index in [__('audi'), __('bmw'), __('porsche'), __('ford'), __('chevrolet')]
+                        button(id='type#{index}', class="btn-primary btn-unselected") #{item}
+                hr
+            .color
+                .color-title= __('color')
+                .color-list
+                    each element,index in [__('white'), __('orange'), __('yellow'), __('black'), __('red'), __('gloden'), __('silver')]
+                        button(id='color#{index}', class="color-primary color#{index}")
+                hr
+            .urgent
+                .urgent-title=__('other')
+                .urgent-list
+                    each button,number in [__('normal'), __('urgent')]
+                        button(id='priority#{number}', class=['priority','btn-primary','btn-unselected']) #{button}
+            #submit(class=['btn-submit','btn-unavailable'])= __('submit')
+        script(type = 'text/javascript').
+            var typeIndex = '#{typeIndex}';
+            var colorIndex = '#{colorIndex}';
+

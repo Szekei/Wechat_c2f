@@ -1,0 +1,57 @@
+@import "./variable";
+html {
+  height: 100%;
+  overflow: hidden;
+  body {
+    font-family: 'Helvetica Neue';
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: url("../lib/icons/u6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .welcome_button {
+      position: absolute;
+      top: 60%;
+      left: 25%;
+      width: 50%;
+      background-color: @theme_col;
+      font-size: 20px;
+      text-align: center;
+      padding: 10px 0;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .icons {
+      height: 5%;
+      bottom: 2%;
+      width: 100%;
+      position: absolute;
+
+      .icon_sia {
+        background: url("../lib/icons/u12.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 90%;
+        display: inline-block;
+        position: relative;
+        right: -39%;
+
+        .icon_sap {
+          background: url("../lib/icons/u10.png") no-repeat;
+          background-size: contain;
+          height: 100%;
+          width: 90%;
+          display: inline-block;
+          position: relative;
+          left: -70px;
+        }
+      }
+    }
+  }
+}
+

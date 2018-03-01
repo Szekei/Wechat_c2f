@@ -1,0 +1,16 @@
+extends ../layout/default
+
+block head
+  link(rel='stylesheet', href='/stylesheets/main.css')
+  script(src='/javascripts/main.js')
+
+block content
+  div
+    each val in ['宝马', '雪佛兰', '福特']
+      span#id.test= val
+  div
+    each val in ['红色', '绿色', '黄色']
+      span= val
+  button#submitBtn= '提交'
+
+

@@ -1,0 +1,63 @@
+{
+    "state1": "订单已提交",
+    "state2": "订单已在ERP创建",
+    "state3": "订单已下达到MES",
+    "state4": "订单已生产完成",
+
+    "end1": "小车已装配完成",
+    "end2": "给它起个好听点的名字吧",
+
+    "operation1": "RFID初始化",
+    "operation2": "装载地盘",
+    "operation3": "装载车身",
+    "operation4": "装载挡风玻璃",
+    "operation5": "扫描",
+    "operation6": "挡风玻璃抛光",
+    "operation7": "机器人组装挡风玻璃",
+    "operation8": "质量控制",
+    "operation9": "手工完善",
+    "operation10": "机器分拣",
+
+    "type": "车型",
+    "audi": "奥迪",
+    "bmw": "宝马",
+    "porsche": "保时捷",
+    "ford": "福特",
+    "chevrolet": "雪佛兰",
+
+    "audi_car": "奥迪 R8",
+    "bmw_car": "宝马 335i",
+    "porsche_car": "保时捷 Panamera",
+    "ford_car": "福特 野马",
+    "chevrolet_car": "雪佛兰 科迈罗",
+
+    "color": "颜色",
+    "red": "红色",
+    "yellow": "黄色",
+    "orange": "橙色",
+    "black": "黑色",
+    "white": "白色",
+    "golden": "金色",
+    "silver": "银色",
+
+    "other": "其他",
+    "normal": "正常",
+    "urgent": "加急",
+
+    "submit": "下单",
+    "welcome": "立即体验工业4.0",
+
+    "greeting": "嘿~",
+    "show_off": "看我的新车。是",
+    "introduction2": "一次不错的工业4.0体验",
+    "introduction3": "你喜欢吗？",
+    "order_please": "我也要买",
+
+    "order_js_src": "/javascripts/order/order_zh.js",
+    "overview": "总体",
+    "male": "男性",
+    "female": "女性",
+
+    "order_js_src": "/javascripts/order/order_zh.js",
+    "display_js_src": "/javascripts/analyse/display_zh.js"
+}
